@@ -1,0 +1,196 @@
+/* Base Styles (Unchanged) */
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+}
+
+body {
+    background: linear-gradient(to bottom, #f0f8ff, #add8e6);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.logoAlignment {
+    display: block;
+    margin: -20px auto;
+    max-width: 350px;
+    position: relative;
+    top: -100px;
+}
+
+.card-box {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    display: grid;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.textAlignment {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    font-size: 1.8rem;
+    color: #000000;
+    padding: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    border-radius: 10px;
+    margin: .7rem 0;
+    width: 100%;
+    border: .2rem solid #000000;
+    font-size: 1.8rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    padding: 1.5rem;
+}
+
+.form-group input:hover,
+.form-group textarea:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+    border-radius: 10px;
+    width: 100%;
+    font-size: 18px;
+    padding: 15px;
+    border: none;
+    transition: 0.3s;
+    margin-top: 1rem;
+    display: inline-block;
+    background: #00b074;
+    border-radius: .5rem;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #007bff;
+    letter-spacing: .1rem;
+}
+
+.loginText {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.loginText:hover {
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+    margin-top: 1.5rem;
+    font-size: 15px;
+    color: var(--light-color);
+    text-transform: capitalize;
+}
+
+/* Error Message Styles */
+.error-box {
+    background: linear-gradient(to right, #ff7e7e, #ff4d4d);
+    border: 2px solid #ff0000;
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: -55px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
+    animation: fadeIn 0.5s ease-in-out, bounce 1s ease-in-out 3;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Animation for bounce effect */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Media Query for 1920x1080 Resolution */
+@media (min-width: 1920px) and (max-width: 1080px) {
+    body {
+        font-size: 1.4rem;
+    }
+
+    .card-box {
+        max-width: 700px;
+        padding: 60px 40px;
+    }
+
+    .textAlignment {
+        font-size: 3rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 2rem;
+        padding: 2rem;
+    }
+
+    .btn-primary {
+        font-size: 2rem;
+        padding: 20px;
+    }
+
+    .logoAlignment {
+        max-width: 400px;
+        top: -120px;
+    }
+
+    .error-box {
+        font-size: 2rem;
+        padding: 25px;
+    }
+}

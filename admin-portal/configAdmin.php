@@ -3,7 +3,7 @@
     $HOSTNAME='localhost';
     $USERNAME='root';
     $PASSWORD='';
-    $DATABASE='test_db';
+    $DATABASE='job_horizon_db';
 
 
     $conn=mysqli_connect($HOSTNAME,$USERNAME,$PASSWORD,$DATABASE);

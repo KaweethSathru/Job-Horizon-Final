@@ -6,7 +6,7 @@
             $query = "SELECT * FROM jobs
             WHERE jobs_recycle_bin = 0
             ORDER BY posted_date DESC
-            LIMIT 5";
+            LIMIT 100";
             
 
             $result1 = mysqli_query($connection, $query);

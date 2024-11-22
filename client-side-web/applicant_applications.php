@@ -18,7 +18,8 @@ $applications_list = ""; // Initialize applications list
 $query = "SELECT
             applications.*,
             jobs.*,
-            companies.*
+            companies.company_name,
+            companies.company_email
           FROM
             applications
           INNER JOIN jobs ON applications.job_id = jobs.job_id
@@ -28,6 +29,7 @@ $query = "SELECT
             AND applications.application_recycle_bin = 0
           ORDER BY
             applications.application_id DESC";
+
 
 $result = mysqli_query($connection, $query);
 
@@ -56,9 +58,9 @@ $approval_status = ""; // Default empty
 if ((int)$record['is_approved'] === 1) {
     // Approved
     $approval_status = "<div class='approval-approved'>
-                            <p><strong>Approved:</strong> {$record['approved_description']}</p>";
+                            <p><strong>Approved</strong><br> {$record['approved_description']}</p>";
     if (!empty($record['approved_link'])) {
-        $approval_status .= "<a href=\"{$record['approved_link']}\" target=\"_blank\">Meeting Link</a>";
+        $approval_status .= "<a href=\"{$record['approved_link']}\" target=\"_blank\">Interview Link</a>";
     }
     $approval_status .= "</div>";
 } elseif ((int)$record['is_approved'] === 0) {
@@ -109,8 +111,13 @@ $applications_list .= "<td class=\"text-left\">{$approval_status}</td>";
     <link rel="stylesheet" href="../client-side-web/css/tables.css">
 
     <style>
-        .approval-approved {
-            color: green;
+        .approval-approved strong {
+            color: #00b074;
+            font-weight: bold;
+        }
+
+        .approval-approved a {
+            color: blue;
             font-weight: bold;
         }
 

@@ -94,13 +94,13 @@ if ($result) {
             <head>
                 <meta charset="utf-8">
                 <meta http-equiv="x-ua-compatible" content="ie=edge">
-                <title>JOB HORIZON | <?php echo $record['company_name'] ?></title>
+                <title>HireME | <?php echo $record['company_name'] ?></title>
                 <meta name="description" content="">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
                 <link rel="manifest" href="site.webmanifest">
                 <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon/favicon.ico">
 
-                <link rel="stylesheet" href="../client-side-web/css/theme.css">
+                <link rel="stylesheet" href="../client-side-web/css/bootstrap.min.css">
                 <link rel="stylesheet" href="../client-side-web/css/owl.carousel.min.css">
                 <link rel="stylesheet" href="../client-side-web/css/flaticon.css">
                 <link rel="stylesheet" href="../client-side-web/css/price_rangs.css">
@@ -114,9 +114,9 @@ if ($result) {
                 <link rel="stylesheet" href="../client-side-web/css/style.css">
                 <link rel="stylesheet" href="../client-side-web/css/footer.css">
                 <link rel="stylesheet" href="../client-side-web/css/profile.css">
-                <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/theme.js"></script>
+                <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
                 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-                <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/theme.css" rel="stylesheet" id="bootstrap-css"> -->
+                <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
 
             </head>
 
@@ -134,7 +134,7 @@ if ($result) {
                 </div>
                 <!-- Preloader Start -->
 
-                <?php require_once('../company-side-web/components/header.php'); ?>
+                <?php require_once('../client-side-web/components/header.php'); ?>
 
                 <main>
                     <!-- Hero Area Start-->
@@ -248,7 +248,7 @@ if ($result) {
                 <!-- Jquery, Popper, Bootstrap -->
                 <script src="../client-side-web/components/js/vendor/jquery-1.12.4.min.js"></script>
                 <script src="../client-side-web/components/popper.min.js"></script>
-                <script src="../client-side-web/components/js/theme.js"></script>
+                <script src="../client-side-web/components/js/bootstrap.min.js"></script>
                 <!-- Jquery Mobile Menu -->
                 <script src="../client-side-web/components/js/jquery.slicknav.min.js"></script>
 
