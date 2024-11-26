@@ -62,3 +62,150 @@
     text-align: center;
     color: white;
 }
+
+/* General Styles for Header */
+.header-sticky {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.logo img {
+    max-width: 180px;
+    transition: transform 0.3s ease;
+}
+
+/* Notification Icon */
+.notification-icon {
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.notification-icon a {
+    font-size: 22px;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.notification-icon a:hover {
+    color: #0056b3;
+}
+
+.notify {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Dropdown */
+.dropdown .btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 16px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown .btn:hover {
+    background-color: #0056b3;
+}
+
+.dropdown-menu {
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.dropdown-menu .dropdown-item {
+    font-size: 14px;
+    color: #555;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Responsive Design for 1920x1080 */
+@media screen and (max-width: 1920px) and (min-width: 1280px) {
+    .header-sticky {
+        padding: 10px 40px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo img {
+        max-width: 300px;
+    }
+
+    #navigation {
+        font-size: 18px;
+    }
+
+    .notification-icon a {
+        font-size: 24px;
+    }
+
+    .dropdown .btn {
+        padding: 20px 20px;
+        font-size: 16px;
+    }
+
+    .notification-panel {
+        width: 350px;
+        top: 60px;
+    }
+
+    .notification-item h4 {
+        font-size: 16px;
+    }
+
+    .notification-item p {
+        font-size: 14px;
+    }
+
+    .dropdown-menu .dropdown-item {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+}
+
+/* Extra Small Devices (Phones) */
+@media screen and (max-width: 768px) {
+    .header-sticky {
+        padding: 5px 20px;
+        text-align: center;
+    }
+
+    .logo img {
+        max-width: 140px;
+    }
+
+    #navigation {
+        display: none;
+    }
+
+    .mobile_menu {
+        display: block;
+    }
+
+    .notification-icon a {
+        font-size: 18px;
+    }
+
+    .dropdown .btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}

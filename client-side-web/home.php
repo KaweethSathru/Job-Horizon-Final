@@ -101,6 +101,7 @@ $accCount = mysqli_num_rows($accCountResult);
     <link rel="stylesheet" href="../client-side-web/css/style.css">
     <link rel="stylesheet" href="../client-side-web/css/footer.css">
     <link rel="stylesheet" href="../client-side-web/css/form.css">
+    <link rel="stylesheet" href="../client-side-web/css/home.css">
 </head>
 
 <body>
@@ -485,6 +486,27 @@ $accCount = mysqli_num_rows($accCountResult);
 
         
     </main>
+
+<script>
+    // Smooth Scroll for Navigation Links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Preloader Animation
+    window.addEventListener('load', () => {
+        const preloader = document.getElementById('preloader-active');
+        if (preloader) {
+            preloader.style.opacity = '0';
+            setTimeout(() => preloader.style.display = 'none', 500);
+        }
+    });
+</script>
 
     <?php require_once('../client-side-web/components/footer.php'); ?>
 

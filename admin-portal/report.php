@@ -145,7 +145,7 @@ $json = mysqli_fetch_all ($result3, MYSQLI_ASSOC);
                     </div>
                     <!-- User profile text-->
                     <div class="profile-text"> 
-                            <h5>Super Admin</h5>
+                            <h5>Admin</h5>
                     </div>
                 </div>
                 <!-- End User profile text-->

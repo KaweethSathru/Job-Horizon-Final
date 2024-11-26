@@ -153,30 +153,5 @@
 
 </header>
 
-<style>
-    .notification-panel {
-        position: absolute;
-        top: 50px;
-        right: 0;
-        background: white;
-        border: 1px solid #ccc;
-        padding: 10px;
-        width: 300px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        z-index: 1000;
-    }
-
-    .notification-item {
-        padding: 10px;
-        border-bottom: 1px solid #f0f0f0;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
-
-    .notification-item:hover {
-        background-color: #eef;
-    }
-</style>
-
 <script src="../client-side-web/components/js/applicantNotifications.js"></script>
 <script src="../client-side-web/components/js/companyNotifications.js"></script>
