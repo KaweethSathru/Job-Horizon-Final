@@ -46,7 +46,7 @@ if (isset($_POST['submit'])) {
 
             <link rel="shortcut icon" type="image/x-icon" href="../../assets/favicon/favicon.ico">
 
-            <link rel="stylesheet" href="../client-side-web/css/bootstrap.min.css">
+            <link rel="stylesheet" href="../client-side-web/css/theme.css">
             <link rel="stylesheet" href="../client-side-web/css/owl.carousel.min.css">
             <link rel="stylesheet" href="../client-side-web/css/flaticon.css">
             <link rel="stylesheet" href="../client-side-web/css/price_rangs.css">
@@ -89,10 +89,10 @@ if (isset($_POST['submit'])) {
 
             <!-- All JS Custom Plugins Link Here here -->
             <script src="../client-side-web/components/js/vendor/modernizr-3.5.0.min.js"></script>
-            <!-- Jquery, Popper, Bootstrap -->
+            <!-- Jquery, Popper, theme -->
             <script src="../client-side-web/components/js/vendor/jquery-1.12.4.min.js"></script>
             <script src="../client-side-web/components/js/popper.min.js"></script>
-            <script src="../client-side-web/components/js/bootstrap.min.js"></script>
+            <script src="../client-side-web/components/js/theme.js"></script>
             <!-- Jquery Mobile Menu -->
             <script src="../client-side-web/components/js/jquery.slicknav.min.js"></script>
 
